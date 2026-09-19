@@ -20,16 +20,69 @@
     </header>
 
     <main>
-        <address>
+        <section>
             <h2>Contact Me</h2>
 
-            <p>
-                You can contact me through email:
-                <a href="mailto:your-email@example.com">
-                    allanmaricastigador@example.com
-                </a>
-            </p>
-        </address>
+            <address>
+                <p>
+                    Email:
+                    <a href="mailto:your-email@example.com">
+                        your-email@example.com
+                    </a>
+                </p>
+            </address>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact me</legend>
+
+                    <p>
+                        <label for="name">Full name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            minlength="2"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone (optional)</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9\-\s]{7,}"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -37,4 +90,3 @@
     </footer>
 </body>
 </html>
-
