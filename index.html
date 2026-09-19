@@ -1,44 +1,70 @@
-```html
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Allan Mari Castigador</title>
 </head>
 <body>
+
     <header>
         <h1>Allan Mari Castigador</h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <article>
-            <h2>Welcome</h2>
+            <h2>Welcome to My Website</h2>
 
             <p>
-                Welcome to my personal website. My name is Allan Mari Castigador,
-                and I am a Bachelor of Science in Information Systems student.
+                Hello! My name is Allan Mari Castigador.
+                I am a BS Information Systems student interested in
+                web development and information technology.
             </p>
 
             <p>
-                This website is part of my Digital Web Authoring course, where
-                I am learning how to build structured and accessible web pages
-                using HTML5.
+                This website demonstrates the use of HTML5 semantic
+                elements and responsive images.
             </p>
+
+            <figure>
+                <picture>
+                    <source
+                        type="image/webp"
+                        srcset="
+                            assets/hero-sm.webp 400w,
+                            assets/hero-md.webp 800w,
+                            assets/hero-lg.webp 1600w
+                        "
+                        sizes="(max-width: 600px) 90vw, 800px"
+                    >
+
+                    <img
+                        src="assets/hero-md.jpg"
+                        alt="A landscape photograph representing my personal website"
+                        width="800"
+                        height="450"
+                        loading="lazy"
+                    >
+                </picture>
+
+                <figcaption>
+                    Responsive image using modern WebP formats with a JPEG fallback.
+                </figcaption>
+            </figure>
         </article>
     </main>
 
     <footer>
         <p>&copy; 2026 Allan Mari Castigador</p>
     </footer>
+
 </body>
 </html>
-```
+
