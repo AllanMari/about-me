@@ -1,86 +1,113 @@
-
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | Allan Mari Castigador</title>
-</head>
-<body>
-    <header>
-        <h1>Allan Mari Castigador</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <title>Contact | Allan Mari Castigador</title>
+
+    <meta
+        name="description"
+        content="Contact Allan Mari Castigador through the contact form for questions, messages, or web development-related inquiries."
+    >
+
+    <link
+        rel="canonical"
+        href="https://YOUR-USERNAME.github.io/about-me/contact.html"
+    >
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact | Allan Mari Castigador">
+    <meta
+        property="og:description"
+        content="Contact Allan Mari Castigador through the contact form for questions, messages, or web development-related inquiries."
+    >
+    <meta
+        property="og:image"
+        content="https://YOUR-USERNAME.github.io/about-me/assets/hero-md.jpg"
+    >
+    <meta
+        property="og:url"
+        content="https://YOUR-USERNAME.github.io/about-me/contact.html"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Contact Me</h2>
+            <h2>Get in Touch</h2>
 
             <address>
-                <p>
-                    Email:
-                    <a href="mailto:your-email@example.com">
-                        your-email@example.com
-                    </a>
-                </p>
+                Email:
+                <a href="mailto:allanmaricastigador@example.com">
+                    allanmaricastigador@example.com
+                </a>
             </address>
 
             <form action="#" method="POST">
-                <fieldset>
-                    <legend>Contact me</legend>
 
-                    <p>
-                        <label for="name">Full name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            minlength="2"
-                        >
-                    </p>
+                <p>
+                    <label for="full-name">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        minlength="2"
+                        required
+                    >
+                </p>
 
-                    <p>
-                        <label for="email">Email address</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-                    </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
 
-                    <p>
-                        <label for="phone">Phone (optional)</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            pattern="[0-9\-\s]{7,}"
-                        >
-                    </p>
+                <p>
+                    <label for="phone">Phone:</label><br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9\-\s]{7,}"
+                    >
+                </p>
 
-                    <p>
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            required
-                        ></textarea>
-                    </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+                </p>
 
-                    <p>
-                        <button type="submit">Send</button>
-                    </p>
-                </fieldset>
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+
             </form>
         </section>
     </main>
@@ -88,5 +115,7 @@
     <footer>
         <p>&copy; 2026 Allan Mari Castigador</p>
     </footer>
+
 </body>
 </html>
+
